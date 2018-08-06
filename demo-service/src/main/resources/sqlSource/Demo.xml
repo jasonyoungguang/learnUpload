@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<commands>
+
+    <command id="demo.selectCount">
+        SELECT COUNT(1) AS AMOUNT FROM DEMO WHERE 1=1
+        {? AND USERID=#USERID# }
+        {? AND USERNAME=#USERNAME# }
+        {? AND REGEMAIL=#REGEMAIL# }
+        {? AND ISDELETE=#ISDELETE# }
+    </command>
+
+    <command id="demo.selectByConditions">
+        SELECT * FROM DEMO WHERE 1=1
+        {? AND USERID=#USERID# }
+        {? AND USERNAME=#USERNAME# }
+        {? AND ISDELETE=#ISDELETE# }
+        {? AND ORGANID=#ORGANID# }
+    </command>
+
+</commands>
